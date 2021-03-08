@@ -55,5 +55,24 @@ cors();
    notifs.innerHTML =   "Search results for " + country;
 
 }
+// Should be deleted before deploying
+   var confirmed = document.querySelector("#confirmed");
+   var recovered = document.querySelector("#recovered");
+   var deaths = document.querySelector("#deaths");
+   var notifs = document.querySelector(".notifs");
+ var confirmed = document.querySelector("#confirmed");
+   var recovered = document.querySelector("#recovered");
+   var deaths = document.querySelector("#deaths");
+   var notifs = document.querySelector(".notifs");
+ var confirmed = document.querySelector("#confirmed");
+   var recovered = document.querySelector("#recovered");
+   var deaths = document.querySelector("#deaths");
+   var notifs = document.querySelector(".notifs");
+ var confirmed = document.querySelector("#confirmed");
+   var recovered = document.querySelector("#recovered");
+   var deaths = document.querySelector("#deaths");
+   var notifs = document.querySelector(".notifs");
+
+
 
 
