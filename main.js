@@ -1,10 +1,17 @@
  document.getElementById("form").addEventListener("submit",(e)=>{
     const proxy = "https://cors-anywhere.herokuapp.com/"
     var country = document.getElementById("country").value;
+    var notifs = document.querySelector(".notifs");
+    notifs.innerHTML =   "Search results for " + country;
     var api = `https://api.covid19api.com/live/country/${country}` 
     covidData(api)
-    e.preventDefault()
-})
+    e.preventDefault();
+    clearField();
+});
+
+function clearField(){
+  document.getElementById("country").value = ""
+}
 
 // Handling CORS Policy
 function cors() {
@@ -33,12 +40,6 @@ cors();
   var response = await fetch(api,headers)
 
   var data = await response.json();
-
-   
-  //  catch(error){
-  //    console.log("This is the " + error)
-  //  }
-
    
    var length = data.length;
    var index = length -1;
@@ -46,32 +47,25 @@ cors();
    var confirmed = document.querySelector("#confirmed");
    var recovered = document.querySelector("#recovered");
    var deaths = document.querySelector("#deaths");
-   var notifs = document.querySelector(".notifs");
 
    confirmed.innerHTML = (" Confirmed Cases: "  + data[index].Confirmed)
    recovered.innerHTML = (" Recovered Cases: "  + data[index].Recovered)
    deaths.innerHTML = ("Total Deaths: " + data[index].Deaths)
-   var country = document.getElementById("country").value;
-   notifs.innerHTML =   "Search results for " + country;
+  //  var country = document.getElementById("country").value;
 
 }
+
+
+
 // Should be deleted before deploying
    var confirmed = document.querySelector("#confirmed");
    var recovered = document.querySelector("#recovered");
    var deaths = document.querySelector("#deaths");
    var notifs = document.querySelector(".notifs");
- var confirmed = document.querySelector("#confirmed");
+   var confirmed = document.querySelector("#confirmed");
    var recovered = document.querySelector("#recovered");
    var deaths = document.querySelector("#deaths");
-   var notifs = document.querySelector(".notifs");
- var confirmed = document.querySelector("#confirmed");
-   var recovered = document.querySelector("#recovered");
-   var deaths = document.querySelector("#deaths");
-   var notifs = document.querySelector(".notifs");
- var confirmed = document.querySelector("#confirmed");
-   var recovered = document.querySelector("#recovered");
-   var deaths = document.querySelector("#deaths");
-   var notifs = document.querySelector(".notifs");
+  
 
 
 
