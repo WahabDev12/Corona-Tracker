@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script defer src="main.js"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"></script>
+    <title>COVID TRACKER</title>
+</head>
+<body>
+    <div class="container">
+    <div class="main-div">
+     <h2 class="title">C <div class="rotate"></div>VID-19 TRACKER</h2>
+    </div>
+    <div class="form-container">
+        <form  class="form-container" id="form" action="">
+            <input id="country" autofocus autocapitalize="on" autocomplete="off" class="text" placeholder="Search a country..." id="text">
+            <button type="submit" class="btn" id="myBtn"><i id="icon" class="fa fa-search"></i></button>
+        </form>
+    </div>
+    <br>
+    <h3 class="notifs" >Worldwide Cases</h3 >
+    <br>
+    <div class="card-container">
+    <div class="card" style="width: 18rem;">
+        <div id="card-body" class="bg-danger card-body">
+        <i style="font-size:50px" class="fa fa-bed"></i>
+          <p id="confirmed" class=" card-text">Confirmed Cases: 117 million</p>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem;">
+        <div id="card-body" class=" bg-success card-body">
+            <i style="font-size:50px" class="fa fa-heart"></i>
+          <p id="recovered" class="card-text">Recovered Cases: 65.9 million</p>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem;">
+        <div id="card-body" class=" bg-warning card-body">
+            <i style="font-size:50px" class="fa fa-death"></i>
+          <p id="deaths" class="card-text">Total Deaths: 2.59 million</p>
+        </div>
+      </div>
+    </div>
+</div>
+</body>
+</html>
